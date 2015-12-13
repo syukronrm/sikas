@@ -13,4 +13,9 @@ class M_Transaksi extends CI_Model {
     {
     	return $this->db->insert('transaction_record', $data);
     }
+
+    public function delete($data)
+    {
+    	return $this->db->delete('transaction_record', $data);
+    }
 }

@@ -27,7 +27,14 @@ class C_Transaksi extends CI_Controller {
     	);
     	//echo "lolol";
     	echo $this->M_Transaksi->add($data);
+    }
 
+    public function delete()
+    {
+        $data = array(
+            'id_transaction_record' => $this->input->post('id_transaction_record')
+        );
 
+        echo $this->M_Transaksi->delete($data);
     }
 }
