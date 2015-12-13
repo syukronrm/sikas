@@ -1,0 +1,22 @@
+CRUD
+C:
+1. Menambah user super admin (username, password, nama, no_hp, email). Yang mengubah hak aksesnya menjadi super admin adalah super admin yang lain. Super admin pertama disebut root, sudah disediakan.
+2. Menambah user admin (username, password, nama, no_hp, email). Yang mengubah hak aksesnya menjadi admin adalah super admin.
+3. Menambah user pengguna (username, password, nama, no_hp, email) dan ditambahkan ke dalam grup oleh admin.
+4. Menambah grup (group_name, periode_pembayaran, tagihan) yang dilakukan oleh super admin.
+5. Menambahkan user ke dalam grup.
+
+R:
+1. Menampilkan daftar user dalam satu grup
+2. Menampilkan data transaksi dengan id_transaksi tertentu
+3. Menampilkan tanggungan semua user per periode_pembayaran
+
+U:
+1. Mengubah username, password, no_hp, email user
+2. Mengubah nama_grup, periode_pembayaran, tagihan dari sebuah grup
+3. Mengubah data transaksi
+4. Mengubah hak akses user oleh super admin
+
+D:
+1. Menghapus user dalam grup oleh admin
+2. Menghapus grup oleh super admin
